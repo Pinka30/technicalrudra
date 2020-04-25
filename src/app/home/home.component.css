@@ -1,0 +1,114 @@
+* {    
+    box-sizing: border-box;
+  }
+
+.container-fluid,.carousalimg{
+  width:100%;
+  padding:0;
+}
+
+.content{
+  flex:1 0 auto;
+}
+
+.card{
+  margin: auto 1%;
+  padding: 0;
+}
+
+.card-text{
+  margin: auto 0;
+  padding: 2%;
+}
+
+a,.card-header,.card-body{
+  width:10em;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.div-img{
+  transition: all 0.5s ease; 
+  width:100%;
+  height:auto;
+}
+
+.div-img:hover,
+.div-img:active{
+cursor: pointer;
+transform: scale(1.1);  
+}
+
+div h4{
+  border-bottom:1px solid rgb(209, 206, 206);
+  margin: 4% 0 2% 0;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row{   
+  margin: 2% 3%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.sub-heading:link,
+.sub-heading:visited,
+h4{
+  color:#04416d;
+  text-decoration: none;
+}
+
+.sub-heading:hover,
+.sub-heading:active{
+  color:#007BFF;
+}
+  
+@media only screen and (max-width:500px){
+
+  .card{
+    margin: auto 1%;
+    padding: 2%;
+  }  
+  
+  .card-body,.col-sm-6{
+    width: 130px;
+  }
+
+  .card-body{
+    display: inline-block;
+  }
+
+  .mobilelistcontainer{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .mobilelistcontainer::-webkit-scrollbar{
+    display:none;
+  }
+
+  .container-fluid{
+    padding:0;
+    width:100%;
+  }
+
+  .row{
+    padding: 0 3%;
+  }
+
+  .div-img{
+    width:100%;
+  }
+}

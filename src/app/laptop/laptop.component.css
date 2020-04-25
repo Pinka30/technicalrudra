@@ -1,0 +1,10 @@
+h2{
+    position: relative;
+    text-align:center;
+    color:white;
+    background-image: url('../../assets/mainSectionImages/laptopbg.png');
+    background-size:cover;
+    margin: 4rem 0;
+    padding: 4rem 2rem;
+    background-attachment:fixed;
+}

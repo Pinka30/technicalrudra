@@ -1,0 +1,45 @@
+article{
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.title-header{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.8)),url('../../assets/mainSectionImages/digimark.jpg');
+    background-size: cover;
+    margin: 1.5em 0;
+    padding: 2em;
+    background-attachment: fixed;
+}
+
+h6 {
+    display: inline-block;
+}
+
+img,.img-card{
+    max-width: 280px;
+    max-height:300px;
+    padding: 2% 0;
+}
+.col-lg-4.col-md-6.col-sm-8{
+    transition:all .2s ease-in-out;
+}
+.col-lg-4.col-md-6.col-sm-8:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:480px){
+    h1{
+        margin: 35% 0 15% 0;
+        padding: 10% 5% ;
+        font-size:1.5rem;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="container">    
+    <section>
+      <h1>GADGETS</h1>
+      
+      <outerspinner *ngIf="showSpinner"></outerspinner>
+
+      <div class="row">        
+        <div class="col-lg-4 col-md-6 col-sm-8"
+          *ngFor="let item of boatData | keyvalue">                      
+          <header class="title-header"><h3>{{item.key}}</h3></header>
+          <article>
+            <div *ngFor="let gadgetsval of item.value | keyvalue">
+              <div *ngIf="gadgetsval.key=='Img'; else othervalues" >
+                <div class="card-block" style="max-width:280px;max-height:300px;">
+                  <div class="img-card" >
+                    <img src="{{gadgetsval.value}}" alt="" >
+                  </div>  
+                </div>  
+              </div>
+              <ng-template #othervalues>
+                <div class="card-block" >                 
+                  <h6>{{gadgetsval.key}}: </h6>&nbsp; {{gadgetsval.value}}
+                </div>                       
+              </ng-template>
+            </div> 
+          </article>       
+        </div>      
+      </div>  
+    </section>    
+  </div>
+</div>

@@ -1,0 +1,80 @@
+    <div class="container-fluid">
+        <div>
+            <div class="flex-containertitle">
+                <h1>{{ submobileTitle }}</h1>
+            </div>
+            <br><br>
+            <spinner *ngIf="showSpinner"></spinner>   
+
+            <div class="flex-container" *ngFor="let item of singleProductDetails | keyvalue">                   
+                <div *ngIf="item.key=='Img'"> 
+                    <div class="row">
+                        <div class="column" *ngFor="let img of item.value | keyvalue">   
+                            <img src="{{img.value}}" alt="{{img.name}}" style="width:100%"> 
+                        </div>                   
+                    </div>
+                </div>             
+            </div>
+            
+            <table class="flex-containertitle">
+                <div>
+                    <tr>
+                        <th colspan="3"  style="font-size: 1.1rem;font-weight: 600;">Product Specifications</th>
+                    </tr>
+                    <tbody *ngFor="let item of singleProductDetails | keyvalue">
+                        <tr *ngIf="item.key != 'Img' && item.key != 'MainImg' ">
+                            <th colspan="2" >{{item.key}}</th>
+                            <td>{{item.value}}</td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+
+
+
+            <!-- <table>
+                <thead style="text-align: center;">
+                    <tr >
+                        <th colspan="3" >{{ submobileTitle }}</th>
+                    </tr>
+                </thead>
+                <spinner *ngIf="showSpinner"></spinner>
+                <div *ngFor="let item of singleProductDetails | keyvalue">
+                    <div *ngIf="item.key=='Img'"> 
+                        <div *ngFor="let img of item.value | keyvalue">
+                            
+                                <div class="col" style="padding:2%;display:inline-block; width: 60px;height:auto;">                                  
+                                    <img src="{{img.value}}" alt="" style="width: 50px;height:auto;">
+                                  
+                                </div>
+                           
+                        </div>
+                    </div>            
+                </div>   
+                <br><br>
+            
+                <div>
+                    <tr>
+                        <th colspan="3"  style="font-size: 1.1rem;font-weight: 600;">Product Specifications</th>
+                    </tr>
+                    <tbody *ngFor="let item of singleProductDetails | keyvalue">
+                        <tr *ngIf="item.key != 'Img' && item.key != 'MainImg' ">
+                            <th colspan="2" >{{item.key}}</th>
+                            <td>{{item.value}}</td>
+                        </tr>
+                    </tbody>
+                </div>
+                // <div *ngFor="let item of singleProductDetails | keyvalue">
+                <div *ngIf="item.key != 'Img' ">
+                    <ul>
+                        <li>{{item.key}} :{{item.value}}</li>
+                    </ul>
+                </div>
+                <ngtemplate>
+    
+                </ngtemplate>
+            </div> //
+            </table> -->
+        </div>
+    </div>
+    

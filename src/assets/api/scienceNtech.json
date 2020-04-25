@@ -1,0 +1,42 @@
+[
+    {
+        "title":"Science & Tech 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Science & Tech 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Science & Tech 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Science & Tech 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Science & Tech 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Science & Tech 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Science & Tech 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Science & Tech 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    }
+]

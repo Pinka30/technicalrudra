@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="container">
+    <section>
+      <h2>ALL MOBILE BRANDS AVAILABLE IN INDIA</h2>
+      <spinner *ngIf="showSpinner"></spinner>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6"
+          *ngFor='let item of mobileData | keyvalue'>
+          <article>
+              <a routerLink="/home/mobiledetails/{{item.key}}">
+              <!-- <header class="title-header"><h3>{{item.key}}</h3></header> -->
+              <header class="title-header"><h3 >{{ item.key }}</h3></header>
+              <div *ngFor="let logo of item.value | keyvalue">
+                <div *ngIf="logo.key == 'Logo'" class="img-card">
+                  <img src="{{logo.value}}" alt="" class="w-100 poster" style="width:20%;height:auto">
+                </div>
+              </div>
+              <div class="card-block">
+                <div class="img-card">
+                  <img src="" alt="" class="w-100 poster" style="width:20%;height:auto"></div>
+              </div>
+            </a>
+          </article>
+        </div>  
+      </div>
+    </section>
+  </div>
+</div>

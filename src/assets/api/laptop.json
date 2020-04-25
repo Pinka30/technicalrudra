@@ -1,0 +1,43 @@
+[
+    {
+        "title":"Laptop 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Laptop 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Laptop 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Laptop 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Laptop 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Laptop 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Laptop 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Laptop 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    }
+    
+]

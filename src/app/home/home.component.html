@@ -1,0 +1,216 @@
+<div class="container-fluid">  
+    <div class="carousalimg">
+        <carousel *ngIf="outlet.isActivated == false"></carousel>
+    </div>
+    
+
+    <!-- smartphones by top brands -->
+    
+    <div class="row" *ngIf="outlet.isActivated == false"> 
+        <div class="col-lg-12">
+            <h4>
+                <a routerLink="smartphones" class="hvr-icon-forward sub-heading" >
+                SMARTPHONES
+                <i class="fa fa-chevron-circle-right hvr-icon"></i>                    
+                </a>
+            </h4> 
+        </div>   
+        <spinner *ngIf="showSpinner"></spinner>
+       
+        <div class="mobilelistcontainer" style="display: inline-block;">
+        
+            <a [routerLink]="['/home/mobiledetails','Redmi']">
+                <div class="card-body" >
+                    <img class="div-img" src="../../assets/topcompanies/2_mi.png" alt="MI mobiles" style="width:100%">
+                </div>
+            </a>                
+        
+            <a [routerLink]="['/home/mobiledetails','HTC']">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/0_htc.png" alt="HTC Company" style="width:100%">
+                </div>
+            </a>        
+        
+            <a [routerLink]="['/home/mobiledetails','Samsung']">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/4_samsung.png" alt="Samsung Company" style="width:100%">
+                </div>   
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Vivo']"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/5_vivologo.png" alt="Vivo Company" style="width:100%">
+                </div>    
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Oppo']"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/6_oppo.png" alt="Oppo Company" style="width:100%">
+                </div>    
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Motorola']"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/1_Motorolalogo.png" alt="Motorola Company" style="width:100%">
+                </div>    
+            </a>
+        
+        </div>
+    </div>
+
+    <!-- Latest Stories -->
+
+    <div class="row" *ngIf="outlet.isActivated == false">
+        <div class="col-lg-12">
+            <h4>
+                <a routerLink="/home/latest-stories" class="hvr-icon-forward sub-heading" >
+                    LATEST STORIES
+                    <i class="fa fa-chevron-circle-right hvr-icon"></i>
+                </a>
+            </h4> 
+        </div>
+        <div class="mobilelistcontainer" style="display: inline-block;">
+        
+            <a routerLink="/home/latest-stories">
+                <div class="card-body" >
+                    <img class="div-img" src="../../assets/topcompanies/2_mi.png" alt="MI mobiles" style="width:100%">
+                </div>
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>                
+        
+            <a routerLink="/home/latest-stories">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/0_htc.png" alt="HTC Company" style="width:100%">
+                </div>
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>        
+        
+            <a routerLink="/home/latest-stories">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/4_samsung.png" alt="Samsung Company" style="width:100%">
+                </div>   
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="/home/latest-stories"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/5_vivologo.png" alt="Vivo Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="/home/latest-stories"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/6_oppo.png" alt="Oppo Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="/home/latest-stories"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/1_Motorolalogo.png" alt="Motorola Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+        </div>
+    </div>  
+
+    <!-- Science & Tech -->
+
+    <div class="row" *ngIf="outlet.isActivated == false">
+        <div class="col-lg-12">
+            <h4>
+                <a routerLink="science-ntech" class="hvr-icon-forward sub-heading" >
+                SCIENCE & TECH
+                <i class="fa fa-chevron-circle-right hvr-icon"></i> 
+            </a>
+            </h4>
+        </div>
+        <div class="mobilelistcontainer" style="display: inline-block;">
+        
+            <a routerLink="science-ntech">
+                <div class="card-body" >
+                    <img class="div-img" src="../../assets/topcompanies/2_mi.png" alt="MI mobiles" style="width:100%">
+                </div>
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>                
+        
+            <a routerLink="science-ntech">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/0_htc.png" alt="HTC Company" style="width:100%">
+                </div>
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>        
+        
+            <a routerLink="science-ntech">
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/4_samsung.png" alt="Samsung Company" style="width:100%">
+                </div>   
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="science-ntech"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/5_vivologo.png" alt="Vivo Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="science-ntech"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/6_oppo.png" alt="Oppo Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+            <a routerLink="science-ntech"><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/1_Motorolalogo.png" alt="Motorola Company" style="width:100%">
+                </div>    
+                <p class="card-text"> Story 1 Split AC vs window AC: which type is best for you?</p>
+            </a>
+        
+        </div>
+    </div>    
+
+    <!-- Popular Mobiles -->
+
+    <div class="row" *ngIf="outlet.isActivated == false">
+        <div class="col-lg-12">
+            <h4>POPULAR MOBILES</h4> 
+        </div>    
+        <div class="mobilelistcontainer" style="display: inline-block;">
+        
+            <a [routerLink]="['/home/mobiledetails','Redmi']"><div class="card-header">News 1</div>
+                <div class="card-body" >
+                    <img class="div-img" src="../../assets/topcompanies/2_mi.png" alt="MI mobiles" style="width:100%">
+                </div>                
+            </a>                
+        
+            <a [routerLink]="['/home/mobiledetails','HTC']"><div class="card-header">News 1</div>
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/0_htc.png" alt="HTC Company" style="width:100%">
+                </div>                
+            </a>        
+        
+            <a [routerLink]="['/home/mobiledetails','Samsung']"><div class="card-header">News 1</div>
+                <div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/4_samsung.png" alt="Samsung Company" style="width:100%">
+                </div>                   
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Vivo']"><div class="card-header">News 1</div><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/5_vivologo.png" alt="Vivo Company" style="width:100%">
+                </div>     
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Oppo']"><div class="card-header">News 1</div><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/6_oppo.png" alt="Oppo Company" style="width:100%">
+                </div>    
+            </a>
+        
+            <a [routerLink]="['/home/mobiledetails','Motorola']"><div class="card-header">News 1</div><div class="card-body">
+                <img class="div-img" src="../../assets/topcompanies/1_Motorolalogo.png" alt="Motorola Company" style="width:100%">
+                </div>    
+            </a>
+        
+        </div>
+    </div>
+
+    <router-outlet #outlet="outlet"></router-outlet>
+
+</div> 
+
+

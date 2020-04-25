@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="container"> 
+    <h2>{{mobileTitle | uppercase}} SMARTPHONES</h2> sdfsd
+    <spinner *ngIf="showSpinner"></spinner>
+    <section class="featured-shows" *ngFor='let getTitleValue of mobileData | keyvalue'>  
+      <div class="row" *ngIf="getTitleValue.key == mobileTitle"> 
+        <div class="col-lg-4 col-md-6 col-sm-12"
+          *ngFor='let item of getTitleValue.value | keyvalue'>
+            <a [routerLink]="['/home/singleproduct',mobileTitle,item.key]" >            
+              <!-- it is hiding instead of display none -->
+            <article *ngIf="item.key != 'Logo'" >           
+                <header class="title-header"><h3>{{item.key}}</h3></header>
+                <div class="flex-container" *ngFor="let mobkey of item.value | keyvalue" >
+                  <!-- <div *ngIf="mobkey.key=='Img'; else othervalues" > -->
+                    <div *ngIf="mobkey.key =='MainImg'">
+                    <div class="card-block" style="width:100px;height:200px;">
+                      <div class="img-card" >
+                        <img src="{{mobkey.value}}" alt="" style="width: 100px;height:200px;">
+                      </div>  
+                    </div>  
+                  </div>
+                  <!-- <ng-template #othervalues>
+                    <div class="card-block" >                 
+                      <span style="font-weight: 500;">{{mobkey.key}}:</span> &nbsp; {{mobkey.value}}
+                    </div>                       
+                  </ng-template>  -->
+                </div> 
+            </article>
+          </a>
+        </div>  
+       </div>           
+    </section>
+  </div>
+  <br>
+  <div class="row disclaimer">
+   <strong> Disclaimer:</strong>  <br>Specifications shown may be different from the actual product. <br>
+    We cannot guarantee that the information provided on this page is 100% precise. <br>
+    Please check with the retailer before purchasing.
+   </div>   
+</div>

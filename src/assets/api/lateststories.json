@@ -1,0 +1,22 @@
+[
+    {
+        "title":"Latest Story 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Latest Story 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Latest Story 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Latest Story 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    }
+]

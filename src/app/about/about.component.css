@@ -1,0 +1,60 @@
+.container-fluid{
+    display:flex;
+    justify-content: center;
+    margin: 5em 0 0 0;
+    flex-direction: column;
+}
+
+h4{
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+
+h1,h4{
+    font-family: 'Courgette', cursive;
+    margin: 0 auto;
+    letter-spacing: 1px;   
+    line-height: 2em; 
+    text-align: center;
+}
+
+p{
+    margin:2rem;
+}
+
+.row{
+    align-content: "center";
+}
+.content{
+    font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 5%;
+}
+.about-img{
+    /* width: 100%;
+    height: auto; */
+    border-radius: 50%;
+}
+
+.greytext{
+    /* font-size: 1.1em; */
+    color:rgb(107, 104, 104);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 480px){
+    p{
+        margin:1rem;        
+    }
+    .container-fluid{
+        padding:3% 5%;
+    }
+    .about-img{
+        margin: 0 auto;
+    }
+    
+}
+
+
+

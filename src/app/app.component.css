@@ -1,0 +1,77 @@
+.container-fluid{
+    margin: 4% 0 0 0;
+    padding: 1%;
+}
+
+
+/*----------------------------------------*/
+/*Section*/
+/*----------------------------------------*/
+.section{
+    clear:both;
+    padding: 0px;
+    margin: 0px;
+} 
+
+/*----------------------------------------*/
+/*row*/
+/*----------------------------------------*/
+
+.row{
+    zoom:1;
+}
+
+.row:before,
+.row:after{
+    content:"";
+    display:table;
+}
+
+.row:after{
+    clear:both;
+}
+
+/*----------------------------------------*/
+/*Col*/
+/*----------------------------------------*/
+
+.col{
+    display:block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col-first-child{
+    margin-left:0;
+}
+
+.scrollToTopBtn{
+    /* display: none; */
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    position:fixed;
+    right: 2em;
+    bottom: 4em;
+    color:white;
+    background-color: #0080ff;
+    border: none;   
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    outline: none;
+}
+
+
+
+/*REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS*/
+@media only screen and (max-width:480px){
+    .col{
+        margin:0;
+    }
+
+    .scrollToTopBtn{
+        right: 1em;
+        bottom: 8em;
+    }
+}
+
+

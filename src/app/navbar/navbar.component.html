@@ -1,0 +1,73 @@
+
+<nav class="navbar navbar-expand-lg fixed-top" >
+  <a class="navbar-brand" ><img class="logo" src="../../assets/logo/logo.png"></a> 
+  <div class="menu" style="margin-left:60px;">
+    <ul class="navbar-nav ">
+      <li >
+        <a routerLinkActive="active current" class="nav-link" routerLink="home">Home<span class="sr-only">(current)</span></a>
+      </li>      
+      <li>
+        <div ngbDropdown >
+          <button routerLinkActive="active current" class="drpdwnbtn" id="dropdownBasic1" ngbDropdownToggle routerLink="smartphones">Smartphones</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">        
+            <a ngbDropdownItem class="drpdwnlinks" routerLink="smartphones">All Mobile Brands</a>
+            <a ngbDropdownItem class="drpdwnlinks" routerLink="popular">Popular</a>
+            <a ngbDropdownItem class="drpdwnlinks" routerLink="price">Price</a>
+          </div>
+        </div>
+      </li>     
+      <li>
+          <a routerLinkActive="active current" class="nav-link" routerLink="gadgets">
+            Gadgets</a>
+        </li>
+      <li>
+          <a routerLinkActive="active current" class="nav-link" routerLink="science-ntech">
+            Science & Tech</a>
+      </li>
+      <li>
+        <a routerLinkActive="active current" class="nav-link" routerLink="laptop">
+          Laptops</a>
+      </li>      
+      <li>
+        <a routerLinkActive="active current" class="nav-link" routerLink="digitalmark">
+          Digital Marketing</a>
+      </li>      
+      <li>
+          <a routerLinkActive="active current" class="nav-link" routerLink="about">
+            About</a>
+      </li>
+      <li>
+          <a routerLinkActive="active current" class="nav-link" routerLink="contact">
+            Contact</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="">
+          <i class="fas fa-search"></i></a>
+      </li>
+    </ul>    
+  </div>
+
+  <div class="shortmenu">  
+    <div id="menu-bar">
+			<div id="shortmenubar" (click)="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<ul class="shortmenunav" id="shortmenunav">
+        <li><a routerLink="home" (click)="onClickMenu()" >Home</a></li>
+        <li><a routerLink="smartphones"(click)="onClickMenu()" >Smartphones</a></li>
+        <li><a routerLink="gadgets" (click)="onClickMenu()" >Gadgets</a></li>
+        <li><a routerLink="science-ntech" (click)="onClickMenu()">Science & Tech</a></li>
+        <li><a routerLink="Laptops" (click)="onClickMenu()">Laptops</a></li>
+        <li><a routerLink="digitalmark" (click)="onClickMenu()">Digital Marketing</a></li>
+				<li><a routerLink="about" (click)="onClickMenu()">About</a></li>
+				<li><a routerLink="contact" (click)="onClickMenu()">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>  
+  </div>
+</nav>    
+
+
+

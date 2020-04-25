@@ -1,0 +1,42 @@
+[
+    {
+        "title":"Gadgets 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Gadgets 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Gadgets 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Gadgets 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    }, 
+    {
+        "title":"Gadgets 1",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Gadgets 2",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    },
+    {
+        "title":"Gadgets 3",
+        "brandVal":"top",
+        "image":"assets/smartphones/apple.jpg"
+    },
+    {
+        "title":"Gadgets 4",
+        "brandVal":"normal",
+        "image":"assets/smartphones/mi.png"
+    }
+]

@@ -1,0 +1,24 @@
+.container-fluid{
+    margin: 4% 0 0 0;
+    padding: 1%;
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    color:white;
+    background-image: url('../../assets/mainSectionImages/smartphonesbg.png');
+    background-size: cover;
+    margin: 1.5em 0;
+    padding: 3em;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width:480px){
+    h2{
+        margin: 25% 0 15% 0;
+        padding: 10% 5% ; 
+        font-size: 1.5rem;
+        font-weight: 400;  
+    }
+}
