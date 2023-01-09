@@ -27,7 +27,7 @@
     "bootstrap": "4.4.1",
     "core-js": "^2.5.4",
     "firebase": "^7.8.1",
-    "firebase-admin": "^7.0.0",
+    "firebase-admin": "^11.4.1",
     "hover.css": "^2.3.2",
     "rxjs": "6.0.0",
     "zone.js": "^0.8.26"
